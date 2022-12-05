@@ -4,6 +4,7 @@
 npm i
 npm run dev
 ```
+
 # Primera sesión
 ### [Paso 1] Comando de creación del proyecto
 ```
@@ -36,6 +37,7 @@ npm i mongoose
 ```
 npm install bcryptjs
 ```
+
 # Cuarta sesión
 ### [Paso 1] Validación de existencia de usuarios en la base de datos por email para no duplicar cuentas (archivo usuarioController.js).
 ### [Paso 2] Creación de los archivos authController.js y authRouters.js para realizar la autenticación con JWT. Se validan los tokens creados en la página
@@ -51,3 +53,9 @@ npm i jsonwebtoken
 ```
 npm i dotenv
 ```
+
+# Quinta sesión
+### [Paso 1] Creación middleware para autenticación
+### [Paso 2] Definir en los headers de la petición GET la clave **x-auth-token** y como valor el **token**
+### [Paso 3] Se agrega la funcion de **usuarioAutenticado** en **authController.js** luego de verificar las credenciales del usuario con el token
+### [Paso 4] Se valida con postman el retorno del usuario luego de la autenticación
