@@ -1,3 +1,12 @@
+# Temas cubiertos en el proyeto
+* Uso del framework **express**.
+* Uso de **mongoose** para el ORM de la aplicación y la interacción con MongoDB.
+* Encriptación de password con la librería **bcryptjs**.
+* Autenticación de usuarios con JWT.
+* Uso de variables de entorno para conexiones a base de datos y semilla de encriptación.
+* Creación de middleware para autenticación usando token de usuario.
+* Generación de endpoints para el CRUD.
+
 # Comandos de ejecución del proyecto
 ### Para instalar los paquetes del package.json y ejecutar se ingresan los siguientes comandos:
 ```
@@ -59,3 +68,10 @@ npm i dotenv
 ### [Paso 2] Definir en los headers de la petición GET la clave **x-auth-token** y como valor el **token**
 ### [Paso 3] Se agrega la funcion de **usuarioAutenticado** en **authController.js** luego de verificar las credenciales del usuario con el token
 ### [Paso 4] Se valida con postman el retorno del usuario luego de la autenticación
+
+# Última sesión backend
+### [Paso 1] Se agregan los modelos para **producto** y **categoria** relacionando los productos a una categoría.
+### [Paso 2] Se agregan las rutas para los modelos previamente definidos en los archivos **productoRouters.js** y **categoriaRouters.js** para realizar el CRUD.
+### [Paso 3] Se agregan los controladores **productoController.js** y **categoriaController.js**.
+### [Paso 4] Se crean respuestas de prueba y se utiliza postman para verificar el enrutamiento hacia los controladores.
+### [Paso 5] Se añade la ruta **/api/categoria** al index.js.
