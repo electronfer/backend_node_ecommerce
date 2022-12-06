@@ -43,8 +43,7 @@ exports.autenticarUsuario = async (req, res) => {
             }
         );
 
-        console.log("permitir ingreso");
-
+        //console.log("permitir ingreso");
         
     } catch (error) {
         console.log(error);
