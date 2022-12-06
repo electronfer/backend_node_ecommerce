@@ -8,8 +8,8 @@ router.get("/", authMiddleware, categoriaController.leerCategoria);
 
 router.post("/", authMiddleware, categoriaController.crearCategoria);
 
-router.put("/", authMiddleware, categoriaController.actualizarCategoria);
+router.put("/:id", authMiddleware, categoriaController.actualizarCategoria);
 
-router.delete("/", authMiddleware, categoriaController.borrarCategoria);
+router.delete("/:id", authMiddleware, categoriaController.borrarCategoria);
 
 module.exports = router;
