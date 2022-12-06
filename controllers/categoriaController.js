@@ -40,6 +40,16 @@ exports.actualizarCategoria = async (req, res) => {
             return res.status(400).json({msg: "Categoria no encontrada"});
         }
         
+        if ( categoria.creador.toString() !== req.usuario.id.toString() ) {
+            return res.status(400).json({msg: "Acción no valida para este usuario"});
+        }
+
+        categoria.nombre = req.body.nombre || categoria.nombre;
+
+        categoria.save();
+        
+        res.json({categoria});
+
     } catch (error) {
         console.log(error);
     }
