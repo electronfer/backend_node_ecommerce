@@ -74,4 +74,4 @@ npm i dotenv
 ### [Paso 2] Se agregan las rutas para los modelos previamente definidos en los archivos **productoRouters.js** y **categoriaRouters.js** para realizar el CRUD.
 ### [Paso 3] Se agregan los controladores **productoController.js** y **categoriaController.js**.
 ### [Paso 4] Se crean respuestas de prueba y se utiliza postman para verificar el enrutamiento hacia los controladores.
-### [Paso 5] Se añade la ruta **/api/categoria** al index.js.
+### [Paso 5] Se añaden las rutas **/api/categoria** y **/api/producto** al index.js.
