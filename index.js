@@ -4,6 +4,7 @@ const usuarioRouters = require('./routers/usuarioRouters');
 const authRouters = require('./routers/authRouters');
 const categoriaRouters = require('./routers/categoriaRouters');
 const productoRouters = require('./routers/productoRouters');
+const cors = require("cors");
 
 // Conexión a la base datos
 conectarDB();
@@ -11,8 +12,10 @@ conectarDB();
 const app = express();
 
 // Habilitar express.json
-
 app.use(express.json({ extended:true}));
+
+//habilitar los cors
+app.use(cors());
 
 // Rutas API
 app.use("/api/usuarios", usuarioRouters);
